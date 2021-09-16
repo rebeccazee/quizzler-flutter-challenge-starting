@@ -38,10 +38,10 @@ class QuizBrain {
   }
 
   String getQuestionText() {
-    return _questionBank[_questionNumber].questionText;
+    return _questionBank[_questionNumber].questionText as String;
   }
 
-  bool getCorrectAnswer() {
+  bool? getCorrectAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
   }
 
